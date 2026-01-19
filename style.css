@@ -1,0 +1,31 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.7;
+    color: #333;
+  }
+  
+  .fv {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f5f7fa;
+  }
+  
+  section {
+    padding: 40px 20px;
+  }
+  
+  .cta {
+    text-align: center;
+    background: #eef3ff;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #3366ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  
