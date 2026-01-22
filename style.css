@@ -118,10 +118,30 @@ p {
    mv（メインビジュアル）
    ======================================== */
 .mv {
-  padding: 80px 20px;
+  padding: 0;
+  margin: 0;
   text-align: center;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #fff;
+}
+
+.mv__image {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.mv__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mv__content {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .mv__catch {
@@ -152,6 +172,115 @@ p {
 
 .mv__cta {
   margin-top: 40px;
+}
+
+/* ========================================
+   solution-intro（解決できること）
+   ======================================== */
+.solution-intro {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.solution-intro__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.solution-intro__title-logo {
+  width: auto;
+  height: 28px;
+  vertical-align: middle;
+}
+
+.solution-intro__images {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.solution-intro__before,
+.solution-intro__after {
+  width: 100%;
+}
+
+.solution-intro__before img,
+.solution-intro__after img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========================================
+   check-cta（チェックCTA）
+   ======================================== */
+.check-cta {
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.check-cta__card {
+  max-width: 420px;
+  margin: 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 5px solid #d5320f;
+}
+
+.check-cta__header {
+  background: #d5320f;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.check-cta__heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.check-cta__body {
+  background: #fff;
+  padding: 24px;
+}
+
+.check-cta__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.check-cta__item {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.check-cta__item:last-child {
+  margin-bottom: 0;
+}
+
+.check-cta__item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  color: #333;
 }
 
 /* CTAボタン（赤系） */
