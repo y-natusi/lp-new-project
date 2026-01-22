@@ -283,6 +283,260 @@ p {
   color: #333;
 }
 
+/* ========================================
+   reasons（選ばれる理由）
+   ======================================== */
+.reasons {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #04afbe 0%, #0998aa 100%);
+  text-align: center;
+}
+
+.reasons__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.reasons__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .reasons__grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    gap: 20px;
+  }
+}
+
+.reasons__card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reasons-card__icon {
+  margin-bottom: 20px;
+}
+
+.reasons-card__icon img {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.reasons-card__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+.reasons-card__text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
+}
+
+/* ========================================
+   jobs-carousel（求人カルーセル）
+   ======================================== */
+.jobs-carousel {
+  padding: 0 0 60px 0;
+  background: #fff;
+}
+
+.jobs-carousel__title {
+  background: #04afbe;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin: 0 0 40px 0;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.jobs-carousel__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+.jobs-carousel__tab-input {
+  display: none;
+}
+
+.jobs-carousel__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jobs-carousel__tab-label {
+  display: inline-block;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background: #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+#job-tab-1:checked ~ .jobs-carousel__tabs label[for="job-tab-1"],
+#job-tab-2:checked ~ .jobs-carousel__tabs label[for="job-tab-2"],
+#job-tab-3:checked ~ .jobs-carousel__tabs label[for="job-tab-3"],
+#job-tab-4:checked ~ .jobs-carousel__tabs label[for="job-tab-4"] {
+  background: #04afbe;
+  color: #fff;
+  border-color: #04afbe;
+}
+
+/* インジケーター（点） */
+.jobs-carousel__indicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.jobs-carousel__indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#job-tab-1:checked ~ .jobs-carousel__indicators label[for="job-tab-1"],
+#job-tab-2:checked ~ .jobs-carousel__indicators label[for="job-tab-2"],
+#job-tab-3:checked ~ .jobs-carousel__indicators label[for="job-tab-3"],
+#job-tab-4:checked ~ .jobs-carousel__indicators label[for="job-tab-4"] {
+  background: #04afbe;
+  transform: scale(1.2);
+}
+
+.jobs-carousel__content {
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.jobs-carousel__panel {
+  display: none;
+  align-items: center;
+  gap: 12px;
+}
+
+#job-tab-1:checked ~ .jobs-carousel__content #job-panel-1,
+#job-tab-2:checked ~ .jobs-carousel__content #job-panel-2,
+#job-tab-3:checked ~ .jobs-carousel__content #job-panel-3,
+#job-tab-4:checked ~ .jobs-carousel__content #job-panel-4 {
+  display: flex;
+}
+
+/* 矢印ボタン */
+.jobs-carousel__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  background: #f5f5f5;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.jobs-carousel__arrow:hover {
+  background: #04afbe;
+  color: #fff;
+}
+
+.jobs-carousel__card {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.jobs-card__title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 24px 0;
+  color: #333;
+  text-align: center;
+}
+
+.jobs-card__info {
+  margin-bottom: 32px;
+}
+
+.jobs-card__location,
+.jobs-card__salary,
+.jobs-card__type {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.jobs-card__description {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+  margin: 24px 0 0 0;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+}
+
+.jobs-card__cta {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background: #e53935;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.jobs-card__cta:hover {
+  background: #c62828;
+}
+
 /* CTAボタン（赤系） */
 .btn {
   display: inline-block;

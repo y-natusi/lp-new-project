@@ -70,6 +70,123 @@
     </div>
   </section>
 
+  <!-- reasons -->
+  <section class="reasons">
+    <h2 class="reasons__title">スミジョブが選ばれる3つの理由</h2>
+    <div class="reasons__grid">
+      <div class="reasons__card">
+        <div class="reasons-card__icon">
+          <img src="image/reason-icon-01.png" alt="全国5,000件以上の求人">
+        </div>
+        <h3 class="reasons-card__title">全国5,000件以上の求人</h3>
+        <p class="reasons-card__text">北海道から九州まで<br>製造中心に様々な職種</p>
+      </div>
+      <div class="reasons__card">
+        <div class="reasons-card__icon">
+          <img src="image/reason-icon-02.png" alt="10,000名以上のサポート実績">
+        </div>
+        <h3 class="reasons-card__title">10,000名以上のサポート実績</h3>
+        <p class="reasons-card__text">就業継続率85%以上<br>未経験者95%からスタート</p>
+      </div>
+      <div class="reasons__card">
+        <div class="reasons-card__icon">
+          <img src="image/reason-icon-03.png" alt="業界最速の対応スピード">
+        </div>
+        <h3 class="reasons-card__title">業界最速の対応スピード</h3>
+        <p class="reasons-card__text">営業時間内:平均5分以内<br>最短即日面接→即日入寮</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- jobs-carousel -->
+  <section class="jobs-carousel">
+    <h2 class="jobs-carousel__title">自分好みの求人を探す</h2>
+    <input type="radio" name="job-tab" id="job-tab-1" class="jobs-carousel__tab-input" checked>
+    <input type="radio" name="job-tab" id="job-tab-2" class="jobs-carousel__tab-input">
+    <input type="radio" name="job-tab" id="job-tab-3" class="jobs-carousel__tab-input">
+    <input type="radio" name="job-tab" id="job-tab-4" class="jobs-carousel__tab-input">
+    
+    <div class="jobs-carousel__tabs">
+      <label for="job-tab-1" class="jobs-carousel__tab-label">即入寮</label>
+      <label for="job-tab-2" class="jobs-carousel__tab-label">軽作業</label>
+      <label for="job-tab-3" class="jobs-carousel__tab-label">高収入</label>
+      <label for="job-tab-4" class="jobs-carousel__tab-label">大手企業</label>
+    </div>
+
+    <div class="jobs-carousel__indicators">
+      <label for="job-tab-1" class="jobs-carousel__indicator"></label>
+      <label for="job-tab-2" class="jobs-carousel__indicator"></label>
+      <label for="job-tab-3" class="jobs-carousel__indicator"></label>
+      <label for="job-tab-4" class="jobs-carousel__indicator"></label>
+    </div>
+
+    <div class="jobs-carousel__content">
+      <!-- 即入寮 -->
+      <div class="jobs-carousel__panel" id="job-panel-1">
+        <label for="job-tab-4" class="jobs-carousel__arrow jobs-carousel__arrow--prev">＜</label>
+        <div class="jobs-carousel__card">
+          <h3 class="jobs-card__title">即入寮可能な求人</h3>
+          <div class="jobs-card__info">
+            <p class="jobs-card__location">勤務地：東京都</p>
+            <p class="jobs-card__salary">給与：時給1,200円〜</p>
+            <p class="jobs-card__type">職種：製造・軽作業</p>
+            <p class="jobs-card__description">即日入寮可能！寮費0円で安心して働けます。未経験者歓迎です。</p>
+          </div>
+          <a href="#form" class="jobs-card__cta">この求人に応募する</a>
+        </div>
+        <label for="job-tab-2" class="jobs-carousel__arrow jobs-carousel__arrow--next">＞</label>
+      </div>
+
+      <!-- 軽作業 -->
+      <div class="jobs-carousel__panel" id="job-panel-2">
+        <label for="job-tab-1" class="jobs-carousel__arrow jobs-carousel__arrow--prev">＜</label>
+        <div class="jobs-carousel__card">
+          <h3 class="jobs-card__title">軽作業の求人</h3>
+          <div class="jobs-card__info">
+            <p class="jobs-card__location">勤務地：神奈川県</p>
+            <p class="jobs-card__salary">給与：時給1,100円〜</p>
+            <p class="jobs-card__type">職種：軽作業・梱包</p>
+            <p class="jobs-card__description">体力的に負担の少ない軽作業です。女性も活躍中！</p>
+          </div>
+          <a href="#form" class="jobs-card__cta">この求人に応募する</a>
+        </div>
+        <label for="job-tab-3" class="jobs-carousel__arrow jobs-carousel__arrow--next">＞</label>
+      </div>
+
+      <!-- 高収入 -->
+      <div class="jobs-carousel__panel" id="job-panel-3">
+        <label for="job-tab-2" class="jobs-carousel__arrow jobs-carousel__arrow--prev">＜</label>
+        <div class="jobs-carousel__card">
+          <h3 class="jobs-card__title">高収入の求人</h3>
+          <div class="jobs-card__info">
+            <p class="jobs-card__location">勤務地：愛知県</p>
+            <p class="jobs-card__salary">給与：時給1,500円〜</p>
+            <p class="jobs-card__type">職種：製造・組立</p>
+            <p class="jobs-card__description">高時給でしっかり稼げる！残業手当も充実しています。</p>
+          </div>
+          <a href="#form" class="jobs-card__cta">この求人に応募する</a>
+        </div>
+        <label for="job-tab-4" class="jobs-carousel__arrow jobs-carousel__arrow--next">＞</label>
+      </div>
+
+      <!-- 大手企業 -->
+      <div class="jobs-carousel__panel" id="job-panel-4">
+        <label for="job-tab-3" class="jobs-carousel__arrow jobs-carousel__arrow--prev">＜</label>
+        <div class="jobs-carousel__card">
+          <h3 class="jobs-card__title">大手企業の求人</h3>
+          <div class="jobs-card__info">
+            <p class="jobs-card__location">勤務地：大阪府</p>
+            <p class="jobs-card__salary">給与：時給1,300円〜</p>
+            <p class="jobs-card__type">職種：製造・検査</p>
+            <p class="jobs-card__description">大手企業で安定した働き方が可能です。福利厚生も充実！</p>
+          </div>
+          <a href="#form" class="jobs-card__cta">この求人に応募する</a>
+        </div>
+        <label for="job-tab-1" class="jobs-carousel__arrow jobs-carousel__arrow--next">＞</label>
+      </div>
+    </div>
+  </section>
+
   <div class="lp-container">
 
     <!-- problem -->
